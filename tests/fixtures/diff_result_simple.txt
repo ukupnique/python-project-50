@@ -1,0 +1,1 @@
+{'a': {'key': 'a', 'operation': 'unchanged', 'value': 'hexlet'}, 'b': {'key': 'b', 'operation': 'changed', 'old': True, 'new': False}, 'c': {'key': 'c', 'operation': 'removed', 'value': 234}, 'd': {'key': 'd', 'operation': 'added', 'value': None}}

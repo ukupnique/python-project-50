@@ -1,4 +1,10 @@
-.venv
-**/__pycache__/
-file1.json
-file2.json
+*.egg-info
+__pycache__
+dist/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.vim
+.idea/
+.coverage
