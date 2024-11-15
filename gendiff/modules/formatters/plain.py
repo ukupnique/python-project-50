@@ -6,7 +6,7 @@ def plain_value(value):
     elif value is None:
         return 'null'
     elif isinstance(value, int):
-        return value
+        return str(value)
     return f"'{value}'"
 
 
@@ -29,19 +29,12 @@ def plain_format(diff_result):
     }
 
     def walk(node, path):
-        result = ''
+        result = []
         for k, v in node.items():
             current_path = f"{path}{v['key']}"
             operation_func = operations.get(v['operation'])
-            if operation_func:
-                if v['operation'] == 'changed':
-                    result += operation_func(current_path, v['old'], v['new'])
-                elif v['operation'] == 'added':
-                    result += operation_func(current_path, v['value'])
-                elif v['operation'] == 'removed':
-                    result += operation_func(current_path)
-                elif v['operation'] == 'nested':
-                    result += operation_func(current_path, v['value']) + '\n'
-        return result[:-1]
+            if v['operation'] in operations:
+                result.append(operation_func(current_path, *(v.get('old'), v.get('new', v.get('value')))))
+        return ''.join(result)
 
     return walk(diff_result, '')
