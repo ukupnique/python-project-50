@@ -32,7 +32,7 @@ def stylish_format(diff_result):  # noqa C901
         for k, v in node.items():
             if v['operation'] == 'nested':
                 strings += (f"\n{space * 2}{v['key']}: "
-                            f"{walk((v['value']), depth + 1)}")
+                            f"{walk((v['value']), depth + 1)}").rstrip()
             elif v['operation'] == 'unchanged':
                 strings += (f"\n{space}"
                             f"{build_string(v, 'value', depth)}").rstrip()
