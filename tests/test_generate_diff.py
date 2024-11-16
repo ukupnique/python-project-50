@@ -1,15 +1,22 @@
 import pytest
 from gendiff import generate_diff
 
-
-parameter = [('path1_plain_json', 'path2_plain_json', 'stylish', 'tests/fixtures/result_example.txt'),
-             ('path1_plain_yml', 'path2_plain_yml', 'stylish', 'tests/fixtures/result_example.txt'),
-
-             ('path1_json', 'path2_json', 'plain', 'tests/fixtures/result_plain.txt'),
-             ('path1_json', 'path2_json', 'json', 'tests/fixtures/result_json.txt'),
-
-             ('path1_yml', 'path2_yml', 'plain', 'tests/fixtures/result_plain.txt'),
-             ('path1_yml', 'path2_yml', 'json', 'tests/fixtures/result_json.txt')]
+parameter = [('path1_plain_json', 'path2_plain_json',
+              'stylish', 'tests/fixtures/result_example.txt'),
+             ('path1_plain_yml', 'path2_plain_yml', 'stylish',
+              'tests/fixtures/result_example.txt'),
+             ('path1_json', 'path2_json', 'stylish',
+              'tests/fixtures/result_stylish.txt'),
+             ('path1_json', 'path2_json', 'plain',
+              'tests/fixtures/result_plain.txt'),
+             ('path1_json', 'path2_json', 'json',
+              'tests/fixtures/result_json.txt'),
+             ('path1_yml', 'path2_yml', 'stylish',
+              'tests/fixtures/result_stylish.txt'),
+             ('path1_yml', 'path2_yml', 'plain',
+              'tests/fixtures/result_plain.txt'),
+             ('path1_yml', 'path2_yml', 'json',
+              'tests/fixtures/result_json.txt')]
 
 
 @pytest.mark.parametrize("path1, path2, format, expected", parameter)
