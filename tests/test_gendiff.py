@@ -21,7 +21,6 @@ from gendiff import generate_diff
      "tests/fixtures/expected_result_light.json"),
     ("tests/fixtures/file1.json", "tests/fixtures/file2.json", 'json',
      "tests/fixtures/expected_result.json"),
-    #from_hexlet_check
     ("tests/fixtures/file1_hexlet.json", "tests/fixtures/file2_hexlet.json", 'plain',
      "tests/fixtures/result_plain_hexlet"),
     ("tests/fixtures/file1_hexlet.yml", "tests/fixtures/file2_hexlet.yml", 'plain',
