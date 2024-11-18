@@ -1,5 +1,0 @@
-{
-    a: hexlet
-    b: true
-    c: 234
-}

@@ -5,9 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b63519a-7d45-4647-8db7-a61a88eb37ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gendiff/formatters/plain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gendiff/formatters/stylish.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/diff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/formatters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/formatters/apply_format.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/formatters/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/formatters/json_formatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/formatters/plain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/formatters/stylish.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/generate_diff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/open_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/modules/parser_args.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/scripts/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/diff_result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/diff_result_simple.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file1.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file1_example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file1_example.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file2.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file2_example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file2_example.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/file_test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/result_example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/result_json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/result_plain.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/result_stylish.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixtures/stylish_value_result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_diff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_formatters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_generate_diff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_value_for_formatter.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +63,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ukupnique&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ukupnique/python-project-50.git&quot;,
+    &quot;accountId&quot;: &quot;47f517fd-b4fb-4bde-b629-e7186d003c95&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -37,25 +88,48 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Makefile Target.check.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.lint.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.selfcheck.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_formatters.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.diff.executor&quot;: &quot;Run&quot;,
     &quot;Python.gendiff.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_formatters.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.generate_diff.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_formatters.executor&quot;: &quot;Run&quot;,
     &quot;Python.test_generate_diff.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/user88/PycharmProjects/python-project-50&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/gendiff/modules" />
       <recent name="$PROJECT_DIR$/gendiff" />
+      <recent name="$PROJECT_DIR$/gendiff/modules" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/gendiff/tests" />
       <recent name="$PROJECT_DIR$/gendiff/tests/fixtures" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_generate_diff">
+  <component name="RunManager" selected="Makefile Target.check">
+    <configuration name="check" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="check" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="lint" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="selfcheck" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="selfcheck" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="test_formatters" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-project-50" />
       <option name="ENV_FILES" value="" />
@@ -102,8 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_generate_diff" />
         <item itemvalue="Python.test_formatters" />
+        <item itemvalue="Python.test_generate_diff" />
+        <item itemvalue="Makefile Target.selfcheck" />
+        <item itemvalue="Makefile Target.lint" />
+        <item itemvalue="Makefile Target.check" />
       </list>
     </recent_temporary>
   </component>
@@ -124,5 +201,16 @@
       <updated>1731252009805</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

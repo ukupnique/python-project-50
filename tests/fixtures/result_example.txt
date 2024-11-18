@@ -1,7 +1,0 @@
-{
-    a: hexlet
-  - b: true
-  + b: false
-  - c: 234
-  + d: null
-}
